@@ -1,11 +1,11 @@
-```mermaid
+```
 sequenceDiagram
     participant browser
     participant server
 
-    Note right of browser: User creates a new note by writing on the form and clicking save button
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/notes
+    Note right of browser: User creates a new note by writing on the form and clicking save button
     activate server
 
     Note left of browser: received the user input and append it to the notes list
