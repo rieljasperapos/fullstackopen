@@ -11,9 +11,9 @@ sequenceDiagram
     Note left of browser: received the user input and append it to the notes list
     server-->>browser: HTML Document, CSS, Javascript and updated JSON notes data
     deactivate server
-
-    Note right of browser: Issued another GET request to the notes page 
+ 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    Note right of browser: Issued another GET request to the notes page 
     activate server
     server-->>browser: HTML Document, css file, javascript file, data.json
     deactivate server
