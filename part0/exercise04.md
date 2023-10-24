@@ -18,5 +18,5 @@ sequenceDiagram
     server-->>browser: HTML Document, css file, javascript file, data.json
     deactivate server
 
-    Note left of browser: renders the updated notes page with the new note added
+    Note left of server: renders the updated notes page with the new note added
 ```
