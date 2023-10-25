@@ -19,7 +19,7 @@ sequenceDiagram
     deactivate server
     Note right of browser: Browser executes the javascript code to fetch the data in JSON format from the browser
 
-    borwser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
     server-->>browser: JSON Data
     deactivate server
