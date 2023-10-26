@@ -16,7 +16,7 @@ sequenceDiagram
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
     activate server
     server-->>browser: JavaScript file
-    Note right of browser: Browser executes the javascript code to fetch the data in JSON format from the browser
+    Note right of browser: Browser executes the javascript code to fetch the data in JSON format from the server
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
