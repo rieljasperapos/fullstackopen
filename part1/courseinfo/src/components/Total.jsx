@@ -1,7 +1,12 @@
 const Total = (props) => {
+    let total = 0;
+    props.parts.map(part => {
+        console.log(part.exercises)
+        total += part.exercises;
+    })
     return (
         <>
-            <p>Number of exercises {props.exercises1 + props.exercises2 + props.exercises3}</p>
+            <p>Number of exercises {total}</p>
         </>
     )
 }
