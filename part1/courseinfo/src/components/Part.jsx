@@ -1,8 +1,8 @@
 const Part = (props) => {
     return (
         <>
-            {props.partsAndExercises.map(p => (
-                <p>{p.part} {p.exercise}</p>
+            {props.partsAndExercises.map((part, indx) => (
+                <p key={indx}>{part.name} {part.exercise}</p>
             ))}
         </>
     )

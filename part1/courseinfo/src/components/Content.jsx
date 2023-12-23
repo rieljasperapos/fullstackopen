@@ -2,18 +2,19 @@ import { useEffect, useState } from "react";
 import Part from "./Part";
 
 const Content = (props) => {
+    // console.log(props.part1.name);
     const partsAndExercises = [
         {
-            part: props.part1,
-            exercise: props.exercises1
+            name: props.part1.name,
+            exercise: props.part1.exercises
         },
         {
-            part: props.part2,
-            exercise: props.exercises2
+            name: props.part2.name,
+            exercise: props.part2.exercises
         },
         {
-            part: props.part3,
-            exercise: props.exercises3
+            name: props.part3.name,
+            exercise: props.part3.exercises
         }
     ];
 
