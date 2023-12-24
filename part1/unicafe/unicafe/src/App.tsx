@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Statistics from './components/Statistics';
+import Button from './components/Button';
 
 interface StatisticsData {
   good: number;
@@ -48,9 +49,9 @@ function App() {
       <div>
         <div>
           <h1>give feedback</h1>
-          <button onClick={() => handleFeedbackClick('good')}>good</button>
-          <button onClick={() => handleFeedbackClick('neutral')}>neutral</button>
-          <button onClick={() => handleFeedbackClick('bad')}>bad</button>
+          <Button text='good' onClick={() => handleFeedbackClick('good')}/>
+          <Button text='neutral' onClick={() => handleFeedbackClick('neutral')} />
+          <Button text='bad' onClick={() => handleFeedbackClick('bad')} />
         </div>
         <div>
           {statistics === initialStatisticsState ? (<p>No feedback Given</p>) : <Statistics statistics={statistics} /> }

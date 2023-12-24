@@ -1,4 +1,5 @@
 import React from "react";
+import StatisticLine from "./StatisticLine";
 
 interface StatisticsProps {
     statistics: {
@@ -17,12 +18,12 @@ const Statistics: React.FC<StatisticsProps> = (props)  => {
         <>
             <div>
                 <h1>Statistics</h1>
-                <p>good {props.statistics.good}</p>
-                <p>neutral {props.statistics.neutral}</p>
-                <p>bad {props.statistics.bad}</p>
-                <p>all {props.statistics.totalFeedback}</p>
-                <p>average {props.statistics.average}</p>
-                <p>positive {props.statistics.percentage} %</p>
+                <StatisticLine text='good' value={props.statistics.good} />
+                <StatisticLine text='neutral' value={props.statistics.neutral} />
+                <StatisticLine text='bad' value={props.statistics.bad} />
+                <StatisticLine text='all' value={props.statistics.totalFeedback} />
+                <StatisticLine text='average' value={props.statistics.average} />
+                <StatisticLine text='percentage' value={props.statistics.percentage} />
             </div>
         </>
     )
