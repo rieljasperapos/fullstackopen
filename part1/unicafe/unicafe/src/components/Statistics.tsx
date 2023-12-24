@@ -10,8 +10,9 @@ interface StatisticsProps {
         percentage: number;
     };
 }
-const Statistics: React.FC<StatisticsProps> = (props) => {
-    console.log(props.statistics.good);
+
+const Statistics: React.FC<StatisticsProps> = (props)  => {
+    console.log(props.statistics);
     return (
         <>
             <div>

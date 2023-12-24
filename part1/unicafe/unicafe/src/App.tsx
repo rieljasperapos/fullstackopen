@@ -53,7 +53,7 @@ function App() {
           <button onClick={() => handleFeedbackClick('bad')}>bad</button>
         </div>
         <div>
-          <Statistics statistics={statistics} />
+          {statistics === initialStatisticsState ? (<p>No feedback Given</p>) : <Statistics statistics={statistics} /> }
         </div>
       </div>
     </>
