@@ -18,12 +18,16 @@ const Statistics: React.FC<StatisticsProps> = (props)  => {
         <>
             <div>
                 <h1>Statistics</h1>
-                <StatisticLine text='good' value={props.statistics.good} />
-                <StatisticLine text='neutral' value={props.statistics.neutral} />
-                <StatisticLine text='bad' value={props.statistics.bad} />
-                <StatisticLine text='all' value={props.statistics.totalFeedback} />
-                <StatisticLine text='average' value={props.statistics.average} />
-                <StatisticLine text='percentage' value={props.statistics.percentage} />
+                <table>
+                    <tbody>
+                        <StatisticLine text='good' value={props.statistics.good} />
+                        <StatisticLine text='neutral' value={props.statistics.neutral} />
+                        <StatisticLine text='bad' value={props.statistics.bad} />
+                        <StatisticLine text='all' value={props.statistics.totalFeedback} />
+                        <StatisticLine text='average' value={props.statistics.average} />
+                        <StatisticLine text='percentage' value={props.statistics.percentage} />
+                    </tbody>
+                </table>
             </div>
         </>
     )

@@ -1,17 +1,18 @@
 import React from "react";
 
 interface StatisticLineProps {
-    text: string,
-    value: number
-};
+    text: string;
+    value: number;
+}
 
 const StatisticLine: React.FC<StatisticLineProps> = (props) => {
+    console.log(props.value);
     return (
-        <div>
-            <p>{props.text} {props.value}</p>
-            
-        </div>
-    )
-}
+        <tr>
+            <td>{props.text}</td>
+            <td>{props.value} {props.text === 'percentage' && '%'}</td>
+        </tr>
+    );
+};
 
 export default StatisticLine;
